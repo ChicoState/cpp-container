@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bash --version
-echo $?
+make clean && make
+./a.out
