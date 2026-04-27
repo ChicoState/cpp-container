@@ -32,4 +32,4 @@ COPY . ${WORKDIR}
 RUN find . -type f -print0 | xargs -0 dos2unix --
 
 # Build project
-CMD sh -c ${WORKDIR}/test_runner.sh
+CMD ["./test_runner.sh"]
